@@ -1,7 +1,8 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
 import { RxHamburgerMenu } from "react-icons/rx";
 import {
   HiBeaker,
@@ -10,10 +11,14 @@ import {
   HiOutlineX,
   HiUser,
 } from "react-icons/hi";
-import Logo from "../../../public/logo.png";
+import LogoWhite from "../../../public/mjWhite.png";
+import LogoBlack from "../../../public/mjBlack.png";
 
 export default function MobileMenu() {
   const [navShow, setNavShow] = useState(false);
+  const { systemTheme, theme } = useTheme();
+  const [hasMounted, setHasMounted] = useState(false);
+  const currentTheme = theme === "system" ? systemTheme : theme;
   const data = [
     {
       title: "About",
@@ -48,6 +53,8 @@ export default function MobileMenu() {
     });
   };
 
+  useEffect(() => setHasMounted(true), []);
+
   return (
     <>
       <button
@@ -64,7 +71,16 @@ export default function MobileMenu() {
       >
         <div className="flex items-center justify-between mt-6 px-8">
           <Link href="/" onClick={onToggleNav}>
-            <Image src={Logo} width={35} height={35} alt="logo" />
+            {hasMounted ? (
+              <Image 
+                src={currentTheme === "light" ? LogoBlack : LogoWhite} 
+                width={35} 
+                height={35} 
+                alt="logo" 
+              />
+            ) : (
+              <div className="w-[35px] h-[35px] bg-zinc-200 dark:bg-zinc-800 animate-pulse rounded"></div>
+            )}
           </Link>
 
           <button
