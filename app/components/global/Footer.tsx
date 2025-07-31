@@ -3,6 +3,7 @@ import sanitylogo from "@/public/sanity.png";
 import vercellogo from "@/public/vercel.svg";
 import nextjslogo from "@/public/nextjs.svg";
 import UnmountStudio from "./Unmount";
+import { BiLogoGithub } from "react-icons/bi";
 
 export default function Footer() {
   return (
@@ -66,7 +67,7 @@ export default function Footer() {
           <div className="flex flex-col lg:items-end items-center lg:text-start text-center">
             {/* <a
               className="flex items-center justify-center gap-x-2 dark:bg-primary-bg bg-zinc-100 border border-transparent dark:hover:border-zinc-700 hover:border-zinc-200 rounded-md py-2 px-4 text-center mb-3    font-bold tracking-tight"
-              href="https://github.com/Evavic44/victoreke.com"
+              href="https://github.com/mjey/mjey.dev"
               target="_blank"
               rel="noreferrer noopener"
             >
@@ -75,7 +76,12 @@ export default function Footer() {
             </a> */}
 
             <small className="text-zinc-500">
-              Copyright &copy; Victor Eke {new Date().getFullYear()} All rights
+              Copyright &copy; <a
+              href="https://mjey.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-500 hover:underline"
+            >Muzamil Hussain (MJey)</a> {new Date().getFullYear()} All rights
               Reserved
             </small>
           </div>
