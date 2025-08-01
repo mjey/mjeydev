@@ -9,15 +9,22 @@ import { sanityFetch } from "@/lib/sanity.client";
 import PageHeading from "../components/shared/PageHeading";
 
 export const metadata: Metadata = {
-  title: "Project | Victor Eke",
-  metadataBase: new URL("https://victoreke.com/projects"),
-  description: "Explore projects built by Victor Eke",
+  title: "Projects | Muzamil Hussain",
+  metadataBase: new URL("https://mjey.dev"),
+  description: "Explore a collection of projects built by Muzamil Hussain, showcasing full-stack development with Next.js, Flutter, and Node.js.",
   openGraph: {
-    title: "Projects | Victor Eke",
-    url: "https://victoreke.com/projects",
-    description: "Explore projects built by Victor Eke",
-    images:
-      "https://res.cloudinary.com/victoreke/image/upload/v1692636087/victoreke/projects.png",
+    title: "Projects | Muzamil Hussain",
+    url: "https://mjey.dev/projects",
+    description:
+      "Explore a collection of projects built by Muzamil Hussain, showcasing full-stack development with Next.js, Flutter, and Node.js.",
+    images: [
+      {
+        url: "https://res.cloudinary.com/db2wzz9rg/image/upload/v1754042645/Muzamil_open_graph_yrhi2r.png",
+        width: 1200,
+        height: 630,
+        alt: "Muzamil Hussain's Projects",
+      },
+    ],
   },
 };
 

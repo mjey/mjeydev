@@ -12,17 +12,23 @@ import { sanityFetch } from "@/lib/sanity.client";
 import RefLink from "../components/shared/RefLink";
 
 export const metadata: Metadata = {
-  title: "About | Victor Eke",
-  metadataBase: new URL("https://victoreke.com/about"),
+  title: "About | Muzamil Hussain",
+  metadataBase: new URL("https://mjey.dev"),
   description:
-    "Learn more about my skills, experience and technical background",
+    "Learn more about Muzamil Hussain, a Full-Stack Engineer crafting high-performance web and mobile applications with Next.js, Flutter, and Node.js.",
   openGraph: {
-    title: "About | Victor Eke",
-    url: "https://victoreke.com/about",
+    title: "About | Muzamil Hussain",
+    url: "https://mjey.dev/about",
     description:
-      "Learn more about my skills, experience and technical background",
-    images:
-      "https://res.cloudinary.com/victoreke/image/upload/v1692635746/victoreke/og.png",
+      "Learn more about Muzamil Hussain, a Full-Stack Engineer crafting high-performance web and mobile applications with Next.js, Flutter, and Node.js.",
+    images: [
+      {
+        url: "https://res.cloudinary.com/db2wzz9rg/image/upload/v1754042645/Muzamil_open_graph_yrhi2r.png",
+        width: 1200,
+        height: 630,
+        alt: "Muzamil Hussain - Full-Stack Engineer",
+      },
+    ],
   },
 };
 

@@ -4,17 +4,24 @@ import Posts from "../components/pages/Posts";
 import Social from "../components/shared/Social";
 import { Slide } from "../animation/Slide";
 import PageHeading from "@/app/components/shared/PageHeading";
-
 export const metadata: Metadata = {
-  title: "Blog | Victor Eke",
-  metadataBase: new URL("https://victoreke.com/blog"),
-  description: "Read latest stories from Victor Eke's Blog",
+  title: "Blog | Muzamil Hussain",
+  metadataBase: new URL("https://mjey.dev"),
+  description: "Read the latest articles and insights from Muzamil Hussain's Blog.",
+
   openGraph: {
-    title: "Blog | Victor Eke",
-    url: "https://victoreke.com/blog",
-    description: "Read latest stories from Victor Eke's Blog",
-    images:
-      "https://res.cloudinary.com/victoreke/image/upload/v1692636087/victoreke/blog.png",
+    title: "Blog | Muzamil Hussain",
+    url: "https://mjey.dev/blog",
+    description:
+      "Read the latest articles and insights from Muzamil Hussain's Blog.",
+    images: [
+      {
+        url: "https://res.cloudinary.com/db2wzz9rg/image/upload/v1754042645/Muzamil_open_graph_yrhi2r.png",
+        width: 1200,
+        height: 630,
+        alt: "Muzamil Hussain's Blog",
+      },
+    ],
   },
 };
 

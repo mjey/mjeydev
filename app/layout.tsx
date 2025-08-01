@@ -15,12 +15,12 @@ const inter = Inter({
 });
 
 const options = {
-  title: "Victor Eke | Software Developer",
+  title: "Muzamil Hussain | Software Developer",
   description:
-    "Victor Eke is a Software Developer and Technical Writer who is passionate about building solutions and contributing to open source communities",
-  url: "https://victoreke.com",
+    "Full-Stack Engineer crafting high-performance web and mobile applications. I leverage a modern tech stack including Next.js, Flutter, and Node.js to build scalable, user-centric products from concept to deployment.",
+  url: "https://mjey.dev",
   ogImage:
-    "https://res.cloudinary.com/victoreke/image/upload/v1692635746/victoreke/og.png",
+    "https://res.cloudinary.com/db2wzz9rg/image/upload/v1754042645/Muzamil_open_graph_yrhi2r.png",
 };
 
 export const metadata: Metadata = {
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: options.title,
     url: options.url,
-    siteName: "victoreke.com",
+    siteName: "mjey.dev",
     locale: "en-US",
     type: "website",
     description: options.description,
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     canonical: options.url,
   },
   other: {
-    "google-site-verification": "IzcWMgn5Qjf-LCtA337KTGjivsf9bmod_1pZ-jxYQh8",
+    "google-site-verification": "",
   },
 };
 

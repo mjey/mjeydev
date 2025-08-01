@@ -11,7 +11,7 @@ import { readTime } from "@/app/utils/readTime";
 import { toPlainText } from "@portabletext/react";
 
 const fallbackImage: string =
-  "https://res.cloudinary.com/victoreke/image/upload/v1692608339/victoreke/blog.png";
+  "https://res.cloudinary.com/db2wzz9rg/image/upload/v1754042645/Muzamil_open_graph_yrhi2r.png";
 
 export default async function Posts() {
   const posts: PostType[] = await sanityFetch({

@@ -19,15 +19,24 @@ const images = [
 ];
 
 export const metadata: Metadata = {
-  title: "Photos | Victor Eke",
-  metadataBase: new URL("https://victoreke.com/photos"),
-  description: "Explore photos taken by Victor Eke",
+  title: "Photos | Muzamil Hussain",
+  metadataBase: new URL("https://mjey.dev"),
+
+  description: "Explore a gallery of photos captured by Muzamil Hussain.",
+
   openGraph: {
-    title: "Photos | Victor Eke",
-    url: "https://victoreke.com/photos",
-    description: "Explore photos taken by Victor Eke",
-    images:
-      "https://res.cloudinary.com/victoreke/image/upload/v1692635149/victoreke/photos.png",
+    title: "Photos | Muzamil Hussain",
+    url: "https://mjey.dev/photos",
+    description:
+      "Explore a gallery of photos captured by Muzamil Hussain.",
+    images: [
+      {
+        url: "https://res.cloudinary.com/db2wzz9rg/image/upload/v1754042645/Muzamil_open_graph_yrhi2r.png",
+        width: 1200,
+        height: 630,
+        alt: "A collection of photos by Muzamil Hussain.",
+      },
+    ],
   },
 };
 
