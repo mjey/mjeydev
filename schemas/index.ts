@@ -5,6 +5,7 @@ import post from "./post";
 import author from "./author";
 import heroe from "./heroe";
 import whyHireMe from "./whyHireMe";
+import contact from "./contact";
 import { youtube } from "./youtube";
 import { table } from "./table";
 import blockContent from "./blockContent";
@@ -18,6 +19,7 @@ export const schemaTypes = [
   author,
   heroe,
   whyHireMe,
+  contact,
 
   // Reference types
   blockContent,

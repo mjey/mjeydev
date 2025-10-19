@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@giscus/react": "^2.3.0",
     "@heroicons/react": "^2.2.0",
     "@sanity/code-input": "^4.1.1",

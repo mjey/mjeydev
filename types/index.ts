@@ -108,3 +108,23 @@ export type WhyHireMeType = {
     description: string;
   }[];
 };
+
+export type ContactType = {
+  _id: string;
+  breadcrumbHeadline: string;
+  breadcrumbDescription: string;
+  breadcrumbPoints: {
+    icon: string;
+    text: string;
+  }[];
+  formHeadline: string;
+  formDescription: string;
+  contactInfoHeadline: string;
+  availability: string;
+  timezone: string;
+  faqHeadline: string;
+  faqs: {
+    question: string;
+    answer: string;
+  }[];
+};

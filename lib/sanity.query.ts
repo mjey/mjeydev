@@ -111,3 +111,23 @@ export const whyHireMeQuery = groq`*[_type == "whyHireMe"][0]{
     description
   }
 }`;
+
+export const contactQuery = groq`*[_type == "contact"][0]{
+  _id,
+  breadcrumbHeadline,
+  breadcrumbDescription,
+  breadcrumbPoints[]{
+    icon,
+    text
+  },
+  formHeadline,
+  formDescription,
+  contactInfoHeadline,
+  availability,
+  timezone,
+  faqHeadline,
+  faqs[]{
+    question,
+    answer
+  }
+}`;

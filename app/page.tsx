@@ -58,8 +58,8 @@ export default async function Home() {
           <HeroSvg />
         </Slide>
       </section>
-      <WhyHireMe />
       <ContributionGraph />
+      <WhyHireMe />
       <Job />
     </main>
   );
