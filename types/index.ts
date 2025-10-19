@@ -97,3 +97,14 @@ export type HeroeType = {
   url: string;
   met: boolean;
 };
+
+export type WhyHireMeType = {
+  _id: string;
+  headline: string;
+  description: string;
+  features: {
+    icon: string;
+    headline: string;
+    description: string;
+  }[];
+};

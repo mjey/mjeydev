@@ -100,3 +100,14 @@ export const singlePostQuery = groq`*[_type == "Post" && slug.current == $slug][
 }`;
 
 export const heroesQuery = groq`*[_type == "heroe"] | order(_createdAt asc) { _id, _createdAt, name, url, met }`;
+
+export const whyHireMeQuery = groq`*[_type == "whyHireMe"][0]{
+  _id,
+  headline,
+  description,
+  features[]{
+    icon,
+    headline,
+    description
+  }
+}`;

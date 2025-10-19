@@ -87,7 +87,7 @@ export default async function About() {
                       href="https://linkedin.com/in/mjey"
                       className="flex items-center justify-center text-center gap-x-2 basis-[90%] dark:bg-primary-bg bg-zinc-100 border border-transparent dark:hover:border-zinc-700 hover:border-zinc-200 rounded-md py-2 text-lg font-incognito font-semibold"
                     >
-                      View Résumé <BiLinkExternal className="text-base" />
+                      View Resume <BiLinkExternal className="text-base" />
                     </RefLink>
                     <a
                       href={`${profile?.resumeURL}?dl=${profile?.fullName}-resume.pdf`}
