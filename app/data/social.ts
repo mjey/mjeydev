@@ -1,19 +1,9 @@
 import {
-  BiLinkExternal,
   BiLogoCodepen,
-  BiLogoDribbble,
   BiLogoGithub,
   BiLogoGitlab,
-  BiLogoInstagram,
   BiLogoLinkedinSquare,
-  BiLogoStackOverflow,
-  BiLogoSteam,
-  BiLogoUnsplash,
-  BiLogoYoutube,
 } from "react-icons/bi";
-import { FaFreeCodeCamp, FaProductHunt } from "react-icons/fa";
-import { SiCodewars } from "react-icons/si";
-import { FaHashnode, FaHashtag, FaSquareXTwitter } from "react-icons/fa6";
 
 export const socialLinks = [
   {
@@ -24,14 +14,14 @@ export const socialLinks = [
     status: "social",
   },
   {
-    id: 3,
+    id: 2,
     name: "Linkedin",
     url: "https://linkedin.com/in/mjey",
     icon: BiLogoLinkedinSquare,
     status: "social",
   },
   {
-    id: 17,
+    id: 3,
     name: "Gitlab",
     url: "https://gitlab.com/mjey1",
     icon: BiLogoGitlab,
