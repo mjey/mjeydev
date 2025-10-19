@@ -15,6 +15,10 @@ export default function Navbar() {
   const currentTheme = theme === "system" ? systemTheme : theme;
   const data = [
     {
+      title: "Home",
+      href: "/",
+    },
+    {
       title: "About",
       href: "/about",
     },
@@ -26,6 +30,10 @@ export default function Navbar() {
       title: "Blog",
       href: "/blog",
     },
+    {
+      title: "Contact",
+      href: "/contact",
+    }
   ];
 
   useEffect(() => setHasMounted(true), []);

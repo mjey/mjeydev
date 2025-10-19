@@ -5,9 +5,11 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { RxHamburgerMenu } from "react-icons/rx";
 import {
+  HiArchive,
   HiBeaker,
   HiBookmarkAlt,
   HiCamera,
+  HiHome,
   HiOutlineX,
   HiUser,
 } from "react-icons/hi";
@@ -20,6 +22,11 @@ export default function MobileMenu() {
   const [hasMounted, setHasMounted] = useState(false);
   const currentTheme = theme === "system" ? systemTheme : theme;
   const data = [
+    {
+      title: "Home",
+      href: "/",
+      icon: HiHome,
+    },
     {
       title: "About",
       href: "/about",
@@ -36,10 +43,10 @@ export default function MobileMenu() {
       icon: HiBookmarkAlt,
     },
     {
-      title: "Photos",
-      href: "/photos",
-      icon: HiCamera,
-    },
+      title: "Contact",
+      href: "/contact",
+      icon: HiArchive,
+    }
   ];
 
   const onToggleNav = () => {
