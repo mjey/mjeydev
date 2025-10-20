@@ -3,6 +3,7 @@ import type { ProfileType } from "@/types";
 import HeroSvg from "./assets/icons/HeroSvg";
 import Job from "./components/pages/Job";
 import WhyHireMe from "./components/pages/WhyHireMe";
+import RecentProjects from "./components/pages/RecentProjects";
 import Social from "./components/shared/Social";
 import { Slide } from "./animation/Slide";
 import { sanityFetch } from "@/lib/sanity.client";
@@ -61,6 +62,7 @@ export default async function Home() {
       <ContributionGraph />
       <WhyHireMe />
       <Job />
+      <RecentProjects />
     </main>
   );
 }
