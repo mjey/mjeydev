@@ -128,3 +128,31 @@ export type ContactType = {
     answer: string;
   }[];
 };
+
+export type TestimonialsType = {
+  _id: string;
+  headline: string;
+  description: string;
+  testimonialsList: {
+    name: string;
+    username: string;
+    link?: string;
+    avatar?: {
+      image: string;
+      alt?: string;
+    };
+    rating: number;
+    location?: string;
+    company: string;
+    techStack?: string[];
+    testimonial: string;
+  }[];
+  stats: {
+    averageRating: number;
+    averageRatingLabel: string;
+    totalReviews: number;
+    totalReviewsLabel: string;
+    projectsDone: number;
+    projectsDoneLabel: string;
+  };
+};

@@ -4,6 +4,7 @@ import HeroSvg from "./assets/icons/HeroSvg";
 import Job from "./components/pages/Job";
 import WhyHireMe from "./components/pages/WhyHireMe";
 import RecentProjects from "./components/pages/RecentProjects";
+import Testimonials from "./components/pages/Testimonials";
 import Social from "./components/shared/Social";
 import { Slide } from "./animation/Slide";
 import { sanityFetch } from "@/lib/sanity.client";
@@ -63,6 +64,7 @@ export default async function Home() {
       <WhyHireMe />
       <Job />
       <RecentProjects />
+      <Testimonials />
     </main>
   );
 }

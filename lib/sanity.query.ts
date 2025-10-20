@@ -144,3 +144,31 @@ export const contactQuery = groq`*[_type == "contact"][0]{
     answer
   }
 }`;
+
+export const testimonialsQuery = groq`*[_type == "testimonials"][0]{
+  _id,
+  headline,
+  description,
+  testimonialsList[]{
+    name,
+    username,
+    link,
+    avatar {
+      "image": asset->url,
+      alt
+    },
+    rating,
+    location,
+    company,
+    techStack,
+    testimonial
+  },
+  stats {
+    averageRating,
+    averageRatingLabel,
+    totalReviews,
+    totalReviewsLabel,
+    projectsDone,
+    projectsDoneLabel
+  }
+}`;
